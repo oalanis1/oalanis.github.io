@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo HTTP</title>
+</head>
+<body>
+    
+    <h1>Protocolo HTTP</h1>
+    <H2>Funcionamiento basico de HTTP</H2>
+    <p>El tipo de comunicacion de basa en el intercambio de dos mensajes que es la peticion
+        enviada por el cliente y la respuesta enviada por el servidor, esto permite la 
+    transferencia de datos y recusrsos como documnetos HTML, imagenes o programas.</p>
+    <h3>*La estructura y funcionamiento</h3>
+    <p>El Protocolo de Transferencia de Hipertexto (HTTP) es la base de cualquier intercambio 
+        de datos en la World Wide Web. Es un protocolo de estructura cliente-servidor que define
+         cómo los clientes (normalmente navegadores web) y los servidores se comunican para transferir información.</p>
+    <h3>*Petición HTTP (Cliente a Servidor)</h3>
+    <p>Una petición HTTP es el mensaje que el cliente envía al servidor para solicitar
+        una acción sobre un recurso. Consta de tres partes obligatorias y una opcional:</p>
+<h3>1.Linea de pericion</h3>
+<p>Es la primera linea del mensaje y define la solicitud e indica a accion que el cliente
+    quiere realizar con el recurso
+    <h3>2.Cabecera de peticion</h3>
+    <p>Son pares de Metadatos que proporcionan información adicional sobre la 
+        petición, el cliente, o las preferencias de comunicación.</p>
+        <h3>3.Linea en blanco</h3>
+        <p>Una linea vacia que marca el final de las cabeceras (separador)</p>
+        <h3>4.Cuerpo de peticion</h3>
+        <p>Es paso o regla es opcional, contiene los datos que el cliente quiere enviar al 
+            servidor. Se utiliza principalmente con los métodos POST, PUT y PATCH</p>
+            <h3>*Estructura de la respuesta HTTP</h3>
+            <p>Una respuesta http es el mensaje que el servidor le devuelve al cliente 
+                despues de una peticion, Consta de tres partes obligatorias y una opcional:</p>
+         <h3>1.Linea de estado</h3>   
+         <p>Suele ser la primera linea del mensaje y define el resultado de lo que se le 
+            pidio al servidor, esta la version http que es utilizada por el servidor y 
+        el codigo de estado es un numero de tres digitos que indica el resultado de la 
+        peticion </p>
+        <h3>2.Cabecera de respuestas</h3>
+        <p>Son pares de metadatos que proporcionan informacion sobre el servidor, el contenido
+            de las respuestas o como el cliente debe manejar la informacion </p>
+        <h3>3.Linea en blanco</h3>
+        <p>Es una linea vacia que marca el final de las cabeceras.</p>
+        <h3>4.Cuerpo de respuesta.</h3>
+        <p>Esta regla es opcional Contiene el recurso solicitado o los datos resultantes de 
+            la acción. Si se solicitó una página web, aquí estará el código HTML</p>
+         <h3>*Metodo de peticion</h3>
+         <p>GET:Sirve para obtener recursos primero pide los datos al servidor los carga 
+            a una pagina para de esa manera obener detalles del producto
+            <p>POST:Envia datos para que el servidor los procese 
+                <p>PUT:Sube datos para crear un nuevo recurso en una ubicación específica 
+                    o reemplazar completamente uno existente.</p>
+                    <p>DELETE:Borra un recurso del servidor </p>
+                    <p>HEAD:Pide las cabeceras de la respuesta exactamente igual que GET, 
+                        pero sin el cuerpo del mensaje. Útil para verificar si un recurso existe 
+                        o su tamaño.</p>
+                        <p>PATCH:Envía solo los cambios necesarios para actualizar un recurso,
+                             no el recurso completo.</p>
+            <h3>*Codigo de respuesta</h3>
+            <p>1xx (sigue asi):La tienda ha recibido tu pedido y aún está trabajando en él. Es un mensaje temporal.</p>               
+           <p>2xx(Todo bien):La accion que pediste se completo correctamente </p> 
+           <p>3xx (ve a otro lugar): Lo que pediste no está aquí, pero te decimos dónde buscarlo.
+             Tu navegador debe hacer una nueva petición a la dirección indicada.</p>
+             <p>4xx (Error de cliente):Hubo un error en tu petición. El servidor no pudo completarla 
+                por algo que tú o tu navegador enviaron mal.</p>
+                <p>5xx (Error de servidor):La petición era válida, pero el servidor falló al intentar
+                     procesarla.</p>
+         <a href="terceiro.html">Puertos de red</a>
+
+        </p>
+         </p>
+              
+
+
+    </body>
+</html>
