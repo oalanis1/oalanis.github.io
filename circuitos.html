@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación de Elementos de Circuito</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 85%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0056b3;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+            margin-top: 30px;
+            border-left: 5px solid #0056b3;
+            padding-left: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        .formula {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            margin: 15px 0;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Elementos Fundamentales de Circuitos</h1>
+    <p>La siguiente investigación detalla la definición, simbología, leyes fundamentales y comportamiento en circuito de los cinco componentes electrónicos pasivos y activos esenciales.</p>
+
+    <h2>1. Resistores</h2>
+    <div class="section">
+        <h3>Definición y Función</h3>
+        <p>Componente pasivo que opone resistencia al flujo de corriente eléctrica. Su función es limitar y controlar la intensidad de corriente.</p>
+       <img src="imagenes/resistor.jpg.webp" alt="">
+        <p>La unidad de medida de la resistencia es el <strong>Ohm</strong>.</p>
+
+        <h3>Tipos Principales</h3>
+        <ul>
+            <li><strong>Fijos:</strong> Su valor de resistencia no cambia (ej. Resistores de Carbón).</li>
+            <li><strong>Variables:</strong> Su valor puede ser ajustado manualmente (ej. Potenciómetros o Reóstatos).</li>
+            <li><strong>Dependientes:</strong> Su valor cambia con factores externos (ej. LDR - luz, Termistor - temperatura).</li>
+        </ul>
+
+        <h3>Leyes y Fórmulas Clave</h3>
+        <p>Se rigen principalmente por la <strong>Ley de Ohm</strong> y la fórmula de fabricación:</p>
+        <div class="formula">
+            <p><strong>Ley de Ohm:</strong> v=I*R</p>
+        </div>
+
+        <h3>Ejemplos y aplicaciones</h3>
+        <p>Se usa en la mayoria de los circuitos para <strong>proteger un LED</strong> limitando la corriente para que no se queme.</p>
+    </div>
+    
+    <h2>2. Capacitores</h2>
+    <div class="section">
+        <h3>Definición y Función</h3>
+        <p>Componente pasivo que almacena energía en forma de campo eléctrico. Consiste en dos placas conductoras separadas por un material dieléctrico (aislante).</p>
+        <img src="imagenes/capacitores.jpg" alt="">
+        <p>La unidad de medida de la capacitancia es el <strong>Faradio (F)</strong>.</p>
+
+        <h3>Tipos Principales</h3>
+            <ul>
+            <li><strong>Electrolíticos:</strong> Polarizados, ofrecen alta capacitancia.</li>
+            <li><strong>Cerámicos:</strong> No polarizados, alta estabilidad y frecuencia.</li>
+            <li><strong>Variable:</strong> Utilizados para sintonizar frecuencias.</li>
+            </ul>
+
+        <h3>Leyes y Fórmulas Clave</h3>
+        <p>La capacitancia se define por la relación entre carga y voltaje, y por sus dimensiones físicas:</p>
+        <div class="formula">
+            <p><strong>Capacitancia (Carga/Voltaje):</strong> C=Q/V (Carga de voltaje)</p>
+            
+        </div>
+
+        <h3>Ejemplos de aplicacion</h3>
+        <p>Se usan en filtros de funte de poder para suavizar el volteje, eleminando el ruido y el rizado</p>
+        
+    </div>
+
+    <h2>3. Inductores </h2>
+    <div class="section">
+        <h3>Definición y Función</h3>
+        <p>Componente pasivo (bobina) que almacena energía en un campo magnético cuando una corriente fluye a través de él. Se opone a los cambios bruscos de corriente.</p>
+
+        <h3>Simbología y Unidad</h3>
+        <img src="imagenes/inductor.webp" alt="">
+        <p>La unidad de medida de la inductancia es el <strong>Henrio (H)</strong>.</p>
+
+        <h3>Tipos Principales</h3>
+        <ul>
+            <li><strong>Núcleo de Aire:</strong> Utilizados en alta frecuencia.</li>
+            <li><strong>Núcleo de Ferrita o Hierro:</strong> Utilizados para aumentar la inductancia en filtros y fuentes de poder.</li>
+        </ul>
+        <img src="imagenes/licensed-image.jpeg" alt="" width="1000" height="1000">
+
+        <h3>Leyes y Fórmulas Clave</h3>
+        <p>Se rigen por la Ley de Faraday y Lenz, donde el voltaje es proporcional al cambio de la Corriente:</p>
+        <div class="formula">
+            <img src="imagenes/formula2.png" alt="">
+        </div>
+
+        <h3>Ejemplo de aplicacion</h3>
+        <p>Los transformadores son esencialmente dos o más inductores acoplados magnéticamente para transferir energía y cambiar los niveles de voltaje.</p>
+    </div>
+
+    <h2 id="diodos">4. Diodos</h2>
+    <div class="section">
+        <h3>Definición y Función</h3>
+        <p>Dispositivo semiconductor de dos terminales (Ánodo y Cátodo) que actúa como un interruptor unidireccional. Permite el flujo de corriente solo en una dirección (Polarización Directa) y lo bloquea en la opuesta.</p>
+        <img src="imagenes/diodos.jpeg" alt="" width="600" height="700"><img src="imagenes/diodoo.jpeg" alt="" height="500" width="600">
+        <p>No tienen una unidad de medida</p>
+
+        <h3>Tipos Principales</h3>
+        <ul>
+            <li><strong>Rectificador:</strong> Usado para convertir CA en CD.</li>
+            <li><strong>LED (Light Emitting Diode):</strong> Emite luz al ser polarizado directamente.</li>
+            <li><strong>Zener:</strong> Usado para regulación de voltaje en polarización inversa.</li>
+        </ul>
+        <h3>Formulas claves</h3>
+        <p>Las "leyes de diodos" se refieren principalmente a su comportamiento no lineal de conducción unidireccional y se describen mediante la Ecuación de Shockley (para el diodo real) y el Modelo del Diodo Ideal (para el análisis de circuitos).</p>
+        <div class="formula">
+            <img src="imagenes/formula.png" alt="">
+
+        </div>
+
+        <h3>Comportamiento en Circuito</h3>
+        <ul>
+            <li><strong>Polarización Directa:</strong> Permite el paso de corriente una vez que se supera el Voltaje Umbral.</li>
+            <li><strong>Polarización Inversa:</strong> Bloquea el paso de corriente.</li>
+        </ul>
+    </div>
+
+    <h2>5. Transistores (Transistors)</h2>
+    <div class="section">
+        <h3>Definición y Función</h3>
+        <p>Un dispositivo semiconductor de tres terminales que funciona como un interruptor controlado o un amplificador de señales eléctricas. Una pequeña señal en la terminal de control puede gestionar una corriente mucho mayor.</p>
+
+        <img src="imagenes/Transistor.jpg.webp" alt="" width="500" height="600"> <img src="imagenes/transistorr.jpeg" alt="" width="600" height="500">
+        <p>La característica clave es su <strong>Ganancia de Corriente </strong>, que es adimensional.</p>
+
+        <h3>Tipos Principales</h3>
+        <ul>
+            <li><strong>BJT (Transistor de Unión Bipolar):</strong> Controlado por corriente (NPN y PNP).</li>
+            <li><strong>FET/MOSFET:</strong> Controlado por voltaje.</li>
+        </ul>
+
+        <h3>Leyes y Fórmulas Clave</h3>
+        <p>Ley de Corrientes de Kirchhoff (LCK): La suma de las corrientes que entran a un nodo (la base del transistor, por ejemplo) es igual a la suma de las corrientes que salen. Aplicada al transistor, establece la relación entre las tres corrientes principales:</p>
+        <div class="formula">
+            <img src="imagenes/1.png" alt="">,<img src="imagenes/2.png" alt="">,<img src="imagenes/3.png" alt="">
+        </div>
+
+        <h3>Ejemplos de aplicacion</h3>
+        <ul>
+            <li><strong>Corte:</strong> Actúa como un circuito abierto (interruptor apagado).</li>
+            <li><strong>Saturación:</strong> Actúa como un cortocircuito (interruptor encendido).</li>
+            <li><strong>Activa:</strong> Utilizado para la amplificación de señales.</li>
+        </ul>
+    </div>
+
+    <h2>Bibliografía</h2>
+    <div class="section">
+        <p><em>[Espacio para listar las fuentes consultadas: libros, artículos científicos y páginas web.]</em></p>
+        <ul>
+            <li>https://www.tutorialspoint.com/basic_electrical_engineering/index.htm</li>
+            <li>https://es.khanacademy.org/science/electrical-engineering/introduction-to-circuit-analysis/circuit-elements/a/circuit-elements</li>
+            <li>https://www.electronics-tutorials.ws/capacitor/cap_1.html</li>
+            <li>https://inst.eecs.berkeley.edu/~ee105/fa16/lectures/Lecture4-Diodes.pdf</li>
+            <li>https://www.electronics-tutorials.ws/transistor/tran_1.html</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
